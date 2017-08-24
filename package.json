@@ -1,0 +1,23 @@
+{
+  "name": "fitnessapp",
+  "version": "1.0.0",
+  "description": "corrective exercises",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphamarshan/FitnessApp.git"
+  },
+  "author": "Andrew Marsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphamarshan/FitnessApp/issues"
+  },
+  "homepage": "https://github.com/alphamarshan/FitnessApp#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^3.2.0"
+  }
+}
