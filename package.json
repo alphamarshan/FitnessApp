@@ -17,7 +17,13 @@
   },
   "homepage": "https://github.com/alphamarshan/FitnessApp#readme",
   "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
     "colors": "^1.1.2",
-    "inquirer": "^3.2.0"
+    "express": "^4.15.4",
+    "inquirer": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
   }
 }
