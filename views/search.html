@@ -20,6 +20,10 @@
                 </div>
             </form>
 
+            <div id="array">
+                <p></p>
+            </div>
+
 
             <!-- jQuery -->
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -32,11 +36,17 @@
                     e.preventDefault();
                     var userInput = $('#user_input').val().trim();
 
-                    $.get(`/api/${userInput}`, function(resp) {
+                    $.get(`/api/${userInput}`, function (resp) {
                         // do something with resp
                         console.log(resp);
-                    });
+                        for (i = 0; i < resp.results.length; i++) {
+                            var eventName = resp.results[i].assetName;
+                            var runDate = resp.results[i].salesEndDate;
+                            var registrationURL = resp.results[i].registrationUrlAdr;
+                        }
+                        console.log(eventName, runDate, registrationURL);
 
+                    });
                 });
             </script>
 </body>
